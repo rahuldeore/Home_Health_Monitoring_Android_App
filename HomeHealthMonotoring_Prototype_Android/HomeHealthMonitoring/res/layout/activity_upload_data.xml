@@ -1,0 +1,63 @@
+<!-- <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/eat"
+    tools:context="com.helloworld.homehealthmonitoring.UploadData"
+    tools:ignore="MergeRootFrame" />
+-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/eat"
+    android:orientation="horizontal"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.helloworld.homehealthmonitoring.UploadData" >
+
+    <EditText
+        android:id="@+id/BloodPressure"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/HeartRate"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="@string/BloodPressure" />
+
+    <EditText
+        android:id="@+id/Electrocardiography"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/BloodPressure"
+        android:layout_below="@+id/BloodPressure"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="@string/Electrocardiography" />
+
+    <EditText
+        android:id="@+id/HeartRate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/BloodPressure"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="33dp"
+        android:ems="10"
+        android:hint="@string/HeartRate"
+        android:singleLine="true" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Electrocardiography"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="47dp"
+        android:text="@string/button_upload"
+        android:textSize="20sp" />
+
+</RelativeLayout>
